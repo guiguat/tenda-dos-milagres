@@ -27,7 +27,10 @@ int retira (Fila* f){
 }
 
 int vazia (Fila* f){
-
+    if(&(f->ini) == &(f->fim)){
+        return 1;
+    }
+    return 0;
 }
 void libera (Fila* f){}
 void imprime (Fila* f){}
