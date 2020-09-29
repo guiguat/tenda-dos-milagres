@@ -39,10 +39,17 @@ void libera (Fila* f){
         f->ini = proxNo;
         libera(f);
     }
-    return;
 }
 void imprime (Fila* f){
-
+    No* noAux = (No*) malloc( sizeof(No));
+    for ( noAux = f->ini; noAux != f->fim; noAux = noAux->prox ){
+        printf("%d\n", noAux->senha);
+    }
 }
-int conta(Fila *f){}
-
+int conta(Fila *f){
+    int contagem = 0;
+    for ( No* p = f->ini; p != f->fim; p = p->prox ) {
+        contagem++;
+    }
+    return contagem + 1;
+}
