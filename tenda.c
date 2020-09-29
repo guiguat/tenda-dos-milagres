@@ -32,7 +32,15 @@ int vazia (Fila* f){
     }
     return 0;
 }
-void libera (Fila* f){}
+void libera (Fila* f){
+    if(f->ini != NULL){
+        No* proxNo = f->ini->prox;
+        free(f->ini);
+        f->ini = proxNo;
+        libera(f);
+    }
+    return;
+}
 void imprime (Fila* f){}
 int conta(Fila *f){}
 
