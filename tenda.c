@@ -33,7 +33,7 @@ int vazia (Fila* f){
     return 0;
 }
 void libera (Fila* f){
-    if(f->ini != NULL){
+    if(f->ini != f->fim){
         No* proxNo = f->ini->prox;
         free(f->ini);
         f->ini = proxNo;
@@ -41,6 +41,8 @@ void libera (Fila* f){
     }
     return;
 }
-void imprime (Fila* f){}
+void imprime (Fila* f){
+
+}
 int conta(Fila *f){}
 
