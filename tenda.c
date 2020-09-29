@@ -18,14 +18,17 @@ void insere (Fila* f){
     f->fim = novoNo;
 }
 
-float retira (Fila* f){
-    No* novoInicio = f->ini->prox;
+int retira (Fila* f){
+    int senha = f->ini->senha;
+    No* novoPrimeiroNo = f->ini->prox;
     free(f->ini);
-    f->ini = novoInicio;
-    return .5;
+    f->ini = novoPrimeiroNo;
+    return senha;
 }
 
-int vazia (Fila* f){}
+int vazia (Fila* f){
+
+}
 void libera (Fila* f){}
 void imprime (Fila* f){}
 int conta(Fila *f){}

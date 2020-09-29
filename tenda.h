@@ -13,7 +13,7 @@ struct fila {
 typedef struct fila Fila;
 Fila* cria (void);
 void insere (Fila* f);
-float retira (Fila* f);
+int retira (Fila* f);
 int vazia (Fila* f);
 void libera (Fila* f);
 void imprime (Fila* f);

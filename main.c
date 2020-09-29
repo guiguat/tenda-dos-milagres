@@ -41,10 +41,10 @@ int main (void) {
                     printf("E%d",fbe->fim->senha);
                     break;
                 case 3:
-                    printf("M%f", retira(fbm));
+                    printf("M%d", retira(fbm));
                     break;
                 case 4:
-                    printf("M%f", retira(fbe));
+                    printf("M%d", retira(fbe));
                     break;
                 case 5:
                     imprime(fbm);
