@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/guatu/CLionProjects/bencao/main.c
+stdio.h
+-
+stdlib.h
+-
+tenda.h
+C:/Users/guatu/CLionProjects/bencao/tenda.h
+
+C:/Users/guatu/CLionProjects/bencao/tenda.c
+
+C:/Users/guatu/CLionProjects/bencao/tenda.h
+
